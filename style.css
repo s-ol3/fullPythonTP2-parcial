@@ -288,7 +288,7 @@ textarea {
   margin-bottom: 10px;
   border: 1px solid #cccccc;
   border-radius: .5em;
-  color: red;
+  color: var(--color-carrito);
   font-family: 'Unica One', cursive;
   font-size: 1em;
 }
@@ -357,6 +357,14 @@ input::file-selector-button {
   border: thin solid #cccccc;
   border-radius: .5em;
   cursor: pointer;
+}
+
+
+input#nuevaImagen {
+  font-family: 'Unica One', cursive;
+  font-size: .9em;
+  color: var(--color-carrito);
+  padding: 1em 0;
 }
 
 /* a {

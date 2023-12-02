@@ -37,7 +37,16 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-family: 'Dancing Script', cursive;
   font-family: 'Unica One', cursive;
-  height: 100vh;
+  /* height: 100vh; */
+  background-image: url(./assets/img/background2.png);
+  background-size: 30%;
+  background-position: right;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* opacity: 10%; */
+
+  background-image: url(./assets/img/background4.png);
+  background-size: 50%;
 }
 
 html {
@@ -186,15 +195,14 @@ nav img:hover {
 
 
 
-
-
-.container-crud{
-  margin: 6em;
+.container-crud {
+  margin: 7em;
   display: grid;
   justify-content: center;
   align-items: center;
 }
-.crud-icon{
+
+.crud-icon {
   float: right;
   margin-left: 2em;
 }
@@ -230,13 +238,18 @@ nav img:hover {
   padding: 20px;
 } */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: center;
   /* color: #007bff; */
 }
 
 form {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   /* background-color: white; */
@@ -245,11 +258,13 @@ form {
 
   background-color: var(--color-background-tarjetas-blanco);
   /* border: 1px solid var(--color-background-tarjetas-gris); */
-  padding: 1em 3em;
+  padding: 4em 1.5em 4em 3em;
   margin: 1em 0;
   border-radius: 2em;
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
+
+
 
 table {
   max-width: 100%;
@@ -268,12 +283,24 @@ label {
 input[type="text"],
 input[type="number"],
 textarea {
-  width: 90%;
+  width: 93%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #cccccc;
-  border-radius: 5px;
+  border-radius: .5em;
+  color: red;
+  font-family: 'Unica One', cursive;
+  font-size: 1em;
 }
+
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  outline: 1.5px solid var(--color-00);
+}
+
+
 
 input[type="submit"] {
   padding: 10px;
@@ -289,17 +316,47 @@ input[type="submit"]:hover {
 }
 
 button {
-  padding: 8px;
-  margin:4px;
-  background-color: #007bff;
+  padding: .6em 1em;
+  margin: 1em 0;
+  /* background-color: #007bff; */
+  background-color: var(--color-00);
   color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: .5em;
   cursor: pointer;
+  font-family: 'Unica One', cursive;
+  font-size: .9em;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: var(--color-sublinks-nav-mobile);
+}
+
+/* #imagenProducto{
+background-color: red;
+font-family: 'Unica One', cursive;
+} */
+
+
+/* input[type="file"] {
+    background-color: red;
+    font-family: 'Unica One', cursive;
+  } */
+input#imagenProducto {
+  font-family: 'Unica One', cursive;
+  font-size: .9em;
+  color: var(--color-carrito);
+  padding: 1em 0;
+}
+input::file-selector-button {
+  font-family: 'Unica One', cursive;
+  font-weight: 500;
+  font-size: .9em;
+  color: var(--color-00);
+  padding: 0.4em;
+  border: thin solid #cccccc;
+  border-radius: .5em;
+  cursor: pointer;
 }
 
 /* a {
